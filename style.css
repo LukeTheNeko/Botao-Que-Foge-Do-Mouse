@@ -1,0 +1,57 @@
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #5170d6;
+    animation: hearts-rain 5s linear infinite;
+}
+
+h1 {
+    margin-top: 100px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 45px;
+}
+
+
+.buttons {
+    margin-top: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 30px;
+    background-color: #ff0000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.button:hover {
+    background-color: #552fff;
+}
+
+.heart {
+    position: fixed;
+    top: -50px;
+    width: 50px; 
+    height: 50px;
+    background-image: url("../src/img/heart.png");
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+    animation: fall 5s linear infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-10vh) rotate(0deg);
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+    }
+  }
+  
